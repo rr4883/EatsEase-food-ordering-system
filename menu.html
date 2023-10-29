@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="mainsection">
+        <div class="bg">
+            <img src="all2.jpg" alt="" class="menubg">
+            
+        </div>
+        <div class="navbar">
+
+            <div class="navlogo" >
+                <div class="logo"></div>
+            </div>
+            <div class="navpanel">
+                <div class="panelops">
+                    <a href="index.html" style="text-decoration:none"><p style="color: black;">Home</p></a>
+                    <a href="about.html" style="text-decoration:none"><p style="color: black;">About</p></a>
+                    <a href="menu.html" style="text-decoration:none"><p style="color: black;">Menu</p></a>
+                    <a href="orders.html" style="text-decoration:none"><p style="color: black;">Orders</p></a>
+                    <a href="contact.html" style="text-decoration:none"><p style="color: black;">Contact</p></a>
+
+                </div>
+                <div class="navlog">
+                    <a href="login.html"><button class="class1" id="login">Log in</button></a>
+    
+                    <a href="register.html"><button class="class2" id="signin">Sign up</button></a>
+                    <button id="logout" class="logout" style="display: none;">logout</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="herosection">
+            <h1 class="head">Whats in the menu?</h1>
+            <div class="topic1">
+                <div class="topic2">
+                    <img class="mainfood" src="menu1.jpg" alt="">
+                    <img class="veg" src="nonveg.png" alt="">
+                    <p class="fname" id="fname0">Chicken pizza</p>
+                    <br>
+                    <p class="cost" id="cost0">Rs-400</p>
+                    <div class="quantity-container" id="quantity-container">
+                        <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input')">-</button>
+                        <input class="qtybutton" type="text" id="quantity-input" value="0" min=0 readonly>
+                        <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input')">+</button>
+                    </div>
+                    <button class="addbutton" id="foodmenu" style="width: 80px;height:37%">Add</button>
+                </div>
+                <div class="topic2">
+                    <img class="mainfood" src="menu2.avif" alt="">
+                    <img class="veg" src="nonveg.png" alt="">
+                    <p class="fname" id="fname1">Pepproni pizza</p>
+                    <br>
+                    <p class="cost"id="cost1" >Rs-470</p>
+                    <div class="quantity-container" id="quantity-container">
+                        <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input1')">-</button>
+                        <input class="qtybutton" type="text" id="quantity-input1" value="0" min=0 readonly>
+                        <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input1')">+</button>
+                    </div>
+                    <button class="addbutton" id="foodmenu" style="width: 80px;height:37%">Add</button>
+                </div>
+                <div class="topic2">
+                    <img class="mainfood" src="menu3.webp" alt="">
+                    <img class="veg" src="veg.png" alt="">
+                    <p class="fname" id="fname2">Cheese pizza</p>
+                    <br>
+                    <p class="cost" id="cost2">Rs-250</p>
+                    <div class="quantity-container" id="quantity-container">
+                        <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input2')">-</button>
+                        <input class="qtybutton" type="text" id="quantity-input2" value="0" min=0 readonly>
+                        <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input2')">+</button>
+                    </div>
+                    <button class="addbutton" id="foodmenu" style="width: 80px;height:20px;">Add</button>
+                </div>
+                <div class="topic2">
+                    <img class="mainfood" src="menu4.jpg" alt="">
+                    <img class="veg" src="nonveg.png" alt="">
+                    <p class="fname"id="fname3">Chicken burger</p>
+                    <br>
+                    <p class="cost" id="cost3">Rs-130</p>
+                    <div class="quantity-container" id="quantity-container">
+                        <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input3')">-</button>
+                        <input class="qtybutton" type="text" id="quantity-input3" value="0" min=0 readonly>
+                        <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input3')">+</button>
+                    </div>
+                    <button class="addbutton" id="foodmenu"style="width: 80px;height:20px;" >Add</button>
+                </div>
+                <div class="topic2">
+                    <img class="mainfood" src="menu5.jpg" alt="">
+                    <img class="veg" src="nonveg.png" alt="">
+                    <p class="fname" id="fname4">Grilled Chicken burger</p>
+                    <br>
+                    <p class="cost" id="cost4">Rs-200</p>
+                    <div class="quantity-container" id="quantity-container">
+                        <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input4')">-</button>
+                        <input class="qtybutton" type="text" id="quantity-input4" value="0" min=0 readonly>
+                        <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input4')">+</button>
+                    </div>
+                    <button class="addbutton" id="foodmenu">Add</button>
+                </div>
+                <div class="topic2">
+                    <img class="mainfood" src="menu6.jpg" alt="">
+                    <img class="veg" src="veg.png" alt="">
+                    <p class="fname" id="fname5">Veg burger</p>
+                    <br>
+                    <p class="cost"  id="cost5">Rs-100</p>
+                    <div class="quantity-container" id="quantity-container">
+                        <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input5')">-</button>
+                        <input class="qtybutton" type="text" id="quantity-input5" value="0" min=0 readonly>
+                        <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input5')">+</button>
+                    </div>
+                    <button class="addbutton" id="foodmenu">Add</button>
+                </div>
+                <div class="topic2">
+                    <img class="mainfood" src="menu7.jpg" alt="">
+                    <img class="veg" src="veg.png" alt="">
+                    <p class="fname" id="fname6">Veg noodles</p>
+                    <br>
+                    <p class="cost" id="cost6">Rs-110</p>
+                    <div class="quantity-container" id="quantity-container">
+                        <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input6')">-</button>
+                        <input class="qtybutton" type="text" id="quantity-input6" value="0" min=0 readonly>
+                        <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input6')">+</button>
+                    </div>
+                    <button class="addbutton" id="foodmenu">Add</button>
+                </div>
+                <div class="topic2">
+                    <img class="mainfood" src="menu8.jpg" alt="">
+                    <img class="veg" src="nonveg.png" alt="">
+                    <p class="fname" id="fname7">chicken noodles</p>
+                    <br>
+                    <p class="cost" id="cost7">Rs-150</p>
+                    <div class="quantity-container" id="quantity-container">
+                        <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input7')">-</button>
+                        <input class="qtybutton" type="text" id="quantity-input7" value="0" min=0 readonly>
+                        <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input7')">+</button>
+                    </div>
+                    <button class="addbutton" id="foodmenu">Add</button>
+                </div>
+                <div class="topic2">
+                    <img class="mainfood" src="menu9.webp" alt="">
+                    <img class="veg" src="veg.png" alt="">
+                    <p class="fname" id="fname8">Schezwan noodles</p>
+                    <br>
+                    <p class="cost" id="cost8">Rs-170</p>
+                    <div class="quantity-container" id="quantity-container">
+                        <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input8')">-</button>
+                        <input class="qtybutton" type="text" id="quantity-input8" value="0" min=0 readonly>
+                        <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input8')">+</button>
+                    </div>
+                    <button class="addbutton" id="foodmenu">Add</button>
+                </div>
+                <div class="topic2">
+                    <img class="mainfood" src="menu10.jpg" alt="">
+                    <img class="veg" src="veg.png" alt="">
+                    <p class="fname" id="fname9">Veg Friedrice</p>
+                    <br>
+                    <p class="cost" id="cost9">Rs-130</p>
+                    <div class="quantity-container" id="quantity-container">
+                        <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input9')">-</button>
+                        <input class="qtybutton" type="text" id="quantity-input9" value="0" min=0 readonly>
+                        <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input9')">+</button>
+                    </div>
+                    <button class="addbutton" id="foodmenu">Add</button>
+                </div>
+                <div class="topic2">
+                    <img class="mainfood" src="menu11.webp" alt="">
+                    <img class="veg" src="nonveg.png" alt="">
+                    <p class="fname" id="fname10">Chicken Friedrice</p>
+                    <br>
+                    <p class="cost" id="cost10">Rs-170</p>
+                    <div class="quantity-container" id="quantity-container">
+                        <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input10')">-</button>
+                        <input class="qtybutton" type="text" id="quantity-input10" value="0" min=0 readonly>
+                        <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input10')">+</button>
+                    </div>
+                    <button class="addbutton" id="foodmenu">Add</button>
+                </div>
+                <div class="topic2">
+                    <img class="mainfood" src="menu12.jpg" alt="">
+                    <img class="veg" src="veg.png" alt="">
+                    <p class="fname" id="fname11">Veg momos</p>
+                    <br>
+                    <p class="cost" id="cost11">Rs-150</p>
+                    <div class="quantity-container" id="quantity-container">
+                        <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input11')">-</button>
+                        <input class="qtybutton" type="text" id="quantity-input11" value="0" min=0 readonly>
+                        <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input11')">+</button>
+                    </div>
+                    <button class="addbutton" id="foodmenu">Add</button>
+                </div>
+                <div class="topic2">
+                    <img class="mainfood" src="menu13.jpg" alt="">
+                    <img class="veg" src="nonveg.png" alt="">
+                    <p class="fname" id="fname12">Chicken momos</p>
+                    <br>
+                    <p class="cost" id="cost12">Rs-200</p>
+                    <div class="quantity-container" id="quantity-container">
+                        <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input12')">-</button>
+                        <input class="qtybutton" type="text" id="quantity-input12" value="0" min=0 readonly>
+                        <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input12')">+</button>
+                    </div>
+                    <button class="addbutton" id="foodmenu" style=" height:20px;">Add</button>
+                </div>
+                <div class="topic2">
+                    <img class="mainfood" src="menu14.jpg" alt="">
+                    <img class="veg" src="veg.png" alt="">
+                    <p class="fname" id="fname13">Icecream</p>
+                    <br>
+                    <p class="cost" id="cost13">Rs-80</p>
+                    <div class="quantity-container" id="quantity-container">
+                        <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input13')">-</button>
+                        <input class="qtybutton" type="text" id="quantity-input13" value="0" min=0 readonly>
+                        <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input13')">+</button>
+                    </div>
+                    <button class="addbutton" id="foodmenu" style=" height:20px;">Add</button>
+                </div>
+                <div class="topic2">
+                    <img class="mainfood" src="menu15.avif" alt="">
+                    <img class="veg" src="nonveg.png" alt="">
+                    <p class="fname" id="fname14">Brownie</p>
+                    <br>
+                    <p class="cost" id="cost14">Rs-100</p>
+                    <div class="quantity-container" id="quantity-container">
+                        <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input14')">-</button>
+                        <input class="qtybutton" type="text" id="quantity-input14" value="0" min=0 readonly>
+                        <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input14')">+</button>
+                    </div>
+                    <button class="addbutton" id="foodmenu">Add</button>
+                </div>
+                <a href="orders.html"><input type="button" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:1.1rem;" class="next" id="next" value="Proceed"></a>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    <script src="menu.js"></script>
+    <script type="module" src="database.js"></script>
+    <script type="module" src="logout.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="bg">
+        <img src="main1bg.jpeg" class='sow'alt="" >
+        <div class="navbar">
+            <div class="profilesection">
+                <div class="profileicon">
+                    <img id="profileimage" src="profileimage1.png">
+                </div>
+                <div id="profbox" class="profbox">
+                    <img  id="profileimage1" src="profileimage1.png">
+                    <span style="position:absolute;top:10%;font-weight:700;left:0%;" >First Name: </span><span class="profdetails" id="profname"></span>
+
+                    <span style="position:absolute;top:30%;font-weight:700;left:1%;">Email: </span><span class="profdetails" id="proemail"></span>
+                    <span style="position:absolute;top:50%;font-weight:700;left:1%;" >Mobile: </span><span class="profdetails" id="promobile"></span>
+                    
+                </div>
+            </div>
+
+            <div class="navlogo" >
+                <div class="logo"></div>
+            </div>
+            <div class="navpanel">
+                <div class="panelops">
+                    <a href="index.html" style="text-decoration:none"><p style="color: black;">Home</p></a>
+                    <a href="about.html" style="text-decoration:none"><p style="color: black;">About</p></a>
+                    <a href="menu.html" style="text-decoration:none"><p style="color: black;">Menu</p></a>
+                    <a href="orders.html" style="text-decoration:none"><p style="color: black;">Orders</p></a>
+                    <a href="contact.html" style="text-decoration:none"><p style="color: black;">Contact</p></a>
+                </div>
+                
+                <div class="navlog">
+
+                    <a  href="login.html"><button class="class1" id="login">Log in</button></a>
+    
+                    <a  href="register.html"><button class="class2" id="signin">Sign up</button></a>
+                    <button id="logout" class="logout" style="display: none;">logout</button>
+
+                </div>
+            </div>
+            
+        </div>
+        <div class="herosection">
+    
+            <h1 class="class3"><i>Our Specials</i></h1>
+            <div class="boxsection">
+                <div class="box1 box">
+                    <div class="boxcontent">
+                        
+                        <div class="boximg" style="background-image: url('pizza01.webp');">
+                        </div>
+                        <div class="ice">
+                            <img class="class4" src="nonveg.png" alt="" >
+                            <p class="oname" id="oname0">Chicken fiesta Pizza</p>
+                            <br>
+                            <p class="rupee" id="rupee0">  Rs-550</p>
+                        </div>
+                        
+                        <div id="quantity-container">
+                            <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input15')">-</button>
+                            <input class="qtybutton" type="text" id="quantity-input15" value="0" min=0 readonly>
+                            <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input15')">+</button>
+                        </div>
+    
+                        <button class="addbutton">Add</button>
+                    
+                    </div>
+                </div>
+                <div class="box2 box">
+                    <div class="boxcontent">
+                        
+                        <div class="boximg" style="background-image: url('burger01.webp');">
+                        </div>
+                        <div class="ice">
+                            <img class="class4" src="nonveg.png" alt="" >
+                            <p class="oname" id="oname1">Chicken Whopper </p>
+                            
+                            <p class="rupee" id="rupee1">Rs-180</p>
+                            
+                        </div>
+                        <br>
+                        <div id="quantity-container">
+                            <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input16')">-</button>
+                            <input class="qtybutton" type="text" id="quantity-input16" value="0" min=0 readonly>
+                            <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input16')">+</button>
+                        </div>
+                        <button class="addbutton">Add</button>
+    
+                    </div>
+                </div>
+                <div class="box3 box">
+                    <div class="boxcontent">
+                   
+                        <div class="boximg" style="background-image: url('noodles1.webp');">
+                        </div>
+                        <div class="ice">
+                            <img class="class4" src="veg.png" alt="" >
+                            <p class="oname" id="oname2">Spaghetti</p>
+                            <br>
+                            <p class="rupee" id="rupee2">Rs-220</p>
+                            
+                        </div>
+                        
+                        <div id="quantity-container">
+                            <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input17')">-</button>
+                            <input class="qtybutton" type="text" id="quantity-input17" value="0" min=0 readonly>
+                            <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input17')">+</button>
+                        </div>
+                        <button class="addbutton">Add</button>
+                    </div>
+                </div>
+                <div class="box4 box">
+                    <div class="boxcontent">
+                        
+                        <div class="boximg" style="background-image: url('Icecream\ Shake01.webp');">
+                        </div>
+                        <div class="ice">
+                            <img class="class4" src="veg.png" alt="" >
+                            <p class="oname" id="oname3">Icecream Shake</p>
+                            <br>
+                            <p class="rupee" id="rupee3">Rs-200</p>
+                            
+                        </div>
+                        
+                        <div id="quantity-container">
+                            <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input18')">-</button>
+                            <input class="qtybutton" type="text" id="quantity-input18" value="0" min=0 readonly>
+                            <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input18')">+</button>
+                        </div>
+                        <button class="addbutton">Add</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <h1 class="offers"><i>Offers</i></h1>
+            <div class="section">
+                <div class="slider">
+                    <span><img src="offer1.png" alt=""></span>
+                    <span><img src="offer3.png" alt=""></span>
+                    <span><img src="offer2.png" alt=""></span>
+                    <span><img src="offer4.png" alt=""></span>
+                    <span><img src="offer1.png" alt=""></span>
+                    <span><img src="offer3.png" alt=""></span>
+                    <span><img src="offer2.png" alt=""></span>
+                    <span><img src="offer4.png" alt=""></span>
+
+    
+                </div>
+                <div class="slider">
+                    <span><img src="offer1.png" alt=""></span>
+                    <span><img src="offer3.png"alt=""></span>
+                    <span><img src="offer2.png" alt=""></span>
+                    <span><img src="offer4.png" alt=""></span>
+                    <span><img src="offer1.png" alt=""></span>
+                    <span><img src="offer3.png"alt=""></span>
+                    <span><img src="offer2.png" alt=""></span>
+                    <span><img src="offer4.png" alt=""></span>
+                    
+                </div>
+            </div>
+            <h1 class="abc">COMBOS</h1>
+            <div class="combos">
+                <div class="box5 box">
+                    <div class="combocontent">
+                        
+                        <div class="comboimg" style="background-image: url('combo1.jpg');">
+                        </div>
+                        <div class="ice">
+                            <img class="class4" src="nonveg.png" alt="" >
+                            <p class="oname" id="oname4">combo1</p>
+                            <p class="rupee" id="rupee4">Rs-210</p>
+                        </div>
+                        <br>
+                        <div id="quantity-container">
+                            <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input19')">-</button>
+                            <input class="qtybutton" type="text" id="quantity-input19" value="0" min=0 readonly>
+                            <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input19')">+</button>
+                        </div>
+
+                        <button class="addbutton">Add</button>
+                    
+                    </div>
+                </div>
+                <div class="box6 box">
+                    <div class="combocontent">
+                        
+                        <div class="comboimg" style="background-image: url('combo2.jpg');">
+                        </div>
+                        <div class="ice">
+                            <img class="class4" src="veg.png" alt="" >
+                            <p class="oname" id="oname5">combo2</p>
+                            <p class="rupee" id="rupee5">Rs-370</p>
+                        </div>
+                        <br>
+                        <div id="quantity-container">
+                            <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input20')">-</button>
+                            <input class="qtybutton" type="text" id="quantity-input20" value="0" min=0 readonly>
+                            <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input20')">+</button>
+                        </div>
+
+                        <button class="addbutton">Add</button>
+                    
+                    </div>
+                </div>
+                <div class="box7 box">
+                    <div class="combocontent">
+                        
+                        <div class="comboimg" style="background-image: url('combo3.png');">
+                        </div>
+                        <div class="ice">
+                            <img class="class4" src="veg.png" alt="" >
+                            <p class="oname" id="oname6">combo3</p>
+                            <p class="rupee" id="rupee6">Rs-160</p>
+                        </div>
+                        <br>
+                        <div id="quantity-container">
+                            <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input21')">-</button>
+                            <input class="qtybutton" type="text" id="quantity-input21" value="0" min=0 readonly>
+                            <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input21')">+</button>
+                        </div>
+
+                        <button class="addbutton">Add</button>
+                    
+                    </div>
+                </div>
+                <div class="box8 box">
+                    <div class="combocontent">
+                        
+                        <div class="comboimg" style="background-image: url('combo4.jpg');">
+                        </div>
+                        <div class="ice">
+                            <img class="class4" src="nonveg.png" alt="" >
+                            <p class="oname" id="oname7">combo4</p>
+                            <p class="rupee" id="rupee7">Rs-230</p>
+                        </div>
+                        <br>
+                        <div id="quantity-container">
+                            <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input22')">-</button>
+                            <input class="qtybutton" type="text" id="quantity-input22" value="0" min=0 readonly>
+                            <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input22')">+</button>
+                        </div>
+
+                        <button class="addbutton">Add</button>
+                    
+                    </div>
+                </div>
+                <div class="box9 box">
+                    <div class="combocontent">
+                        
+                        <div class="comboimg" style="background-image: url('combo5.avif');">
+                        </div>
+                        <div class="ice">
+                            <img class="class4" src="nonveg.png" alt="" >
+                            <p class="oname" id="oname8">combo5</p>
+                            <p class="rupee" id="rupee8">Rs-400</p>
+                        </div>
+                        <br>
+                        <div id="quantity-container">
+                            <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input23')">-</button>
+                            <input class="qtybutton" type="text" id="quantity-input23" value="0" min=0 readonly>
+                            <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input23')">+</button>
+                        </div>
+
+                        <button class="addbutton">Add</button>
+                    
+                    </div>
+                </div>
+                <div class="box10 box">
+                    <div class="combocontent">
+                        
+                        <div class="comboimg" style="background-image: url('combo6.webp');">
+                        </div>
+                        <div class="ice">
+                            <img class="class4" src="veg.png" alt="" >
+                            <p class="oname" id="oname9">combo6</p>
+                            <p class="rupee" id="rupee9">Rs-180</p>
+                        </div>
+                        <br>
+                        <div id="quantity-container">
+                            <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input24')">-</button>
+                            <input class="qtybutton" type="text" id="quantity-input24" value="0" min=0 readonly>
+                            <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input24')">+</button>
+                        </div>
+
+                        <button class="addbutton">Add</button>
+                    
+                    </div>
+                </div>
+                <div class="box11 box">
+                    <div class="combocontent">
+                        
+                        <div class="comboimg" style="background-image: url('combo7.jpg');">
+                        </div>
+                        <div class="ice">
+                            <img class="class4" src="nonveg.png" alt="" >
+                            <p class="oname" id="oname10">combo7</p>
+                            <p class="rupee" id="rupee10">Rs-350</p>
+                        </div>
+                        <br>
+                        <div id="quantity-container">
+                            <button  class="q1" id="quantity-btn" onclick="decreaseQuantity('quantity-input25')">-</button>
+                            <input class="qtybutton" type="text" id="quantity-input25" value="0" min=0 readonly>
+                            <button class="q2"  id="quantity-btn" onclick="increaseQuantity('quantity-input25')">+</button>
+                        </div>
+
+                        <button class="addbutton">Add</button>
+                    
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        
+        <div class="copyright">
+            <p>© 2023 EatsEase</p>
+            <p>Terms</p>    
+            <p>Privacy</p>    
+            <p>Cookies</p>    
+            
+        </div>
+        <div class="copyrig">
+            <p>Jobs</p>
+               
+            <p>Freelancers</p>    
+            <p>Tags</p>    
+            <p>Places</p>    
+            <p>Resources</p>    
+            
+        </div>
+    </div>
+    <script type="module" src="showprofile.js"></script>
+    <script type="module" src="free.js"></script>
+    <script type="module" src="logout.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="orders.css">
+</head>
+<body>
+    <div class="mainsection">
+        <div class="bg">
+            <img src="all2.jpg" alt="" class="menubg">
+            
+        </div>
+        <div class="navbar">
+
+            <div class="navlogo" >
+                <div class="logo"></div>
+            </div>
+            <div class="navpanel">
+                <div class="panelops">
+                    <a href="index.html" style="text-decoration:none"><p style="color: black;">Home</p></a>
+                    <a href="about.html" style="text-decoration:none"><p style="color: black;">About</p></a>
+                    <a href="menu.html" style="text-decoration:none"><p style="color: black;">Menu</p></a>
+                    <a href="orders.html" style="text-decoration:none"><p style="color: black;">Orders</p></a>
+                    <a href="contact.html" style="text-decoration:none"><p style="color: black;">Contact</p></a>
+
+                </div>
+                <div class="navlog">
+                    <a href="login.html" ><button class="class1" id="login">Log in</button></a>
+    
+                    <a href="register.html"><button class="class2" id="signin">Sign up</button></a>
+                    <button id="logout" class="logout" style="display: none;">logout</button>
+                    <p id="but"></p>
+                </div>
+                <div class="herosection">
+                    <h1 class="head">Orders</h1>
+                    <div class="topic1">
+                        <div class="topic2">
+                            <table border="1">
+                                <thead>
+                                    <th colspan="3">Order Details</th>
+                                    
+                                </thead>
+                                <tbody>
+                                    <tr ><td>Food name:</td>
+                                        <td>Quantity:</td>
+                                        <td>Price(for one item):</td>
+                                        
+                                    </tr>
+                                    <tr id="row1"><td id="f1"></td>
+                                    <td id="q1"></td>
+                                    <td id="p1"></td>
+                                    </tr>
+                                    <tr  id="rowf">
+                                        <td colspan="2" id="qf">Total(In rupees):</td>
+                                        <td id="finalamt"></td>
+                                        
+                                    </tr>
+
+                                </tbody>
+                               
+                            </table>
+
+                        </div>
+                        <input type="button" id="pay" class="pay" value="Pay Now" >
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            
+        </div>
+        <script type="module" src="dataretrival.js"></script>
+        <script type="module" src="logout.js"></script>
+</body>
+</html>
