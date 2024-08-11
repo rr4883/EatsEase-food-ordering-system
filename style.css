@@ -2,9 +2,15 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     border: border-box;
+    
+}
+.sow{
+    width: 100%;
+    height: 2900px;
 }
 .navbar{
     height:100px;
+   
     color: black;
     display: flex;
     align-items: center;
@@ -19,7 +25,7 @@
     margin-top: 0;
 }
 .logo{
-    background-image: url("cuco.png");
+    background-image: url("assets/cuco.png");
     height:130px;
     width: 110%;
     background-size: cover;
@@ -27,6 +33,7 @@
 .navpanel{
     width: 530px;
     height: 80px;
+   
 
     align-items: center;
 }
@@ -43,6 +50,7 @@
     width: 100px;
     height: 80px;
     display: flex;
+    
     gap: 2%;
 
 }
@@ -74,13 +82,10 @@
 }
 .herosection{
     width: 100%;
-    height: 0;
-    
+    height: 100%;
+   
 }
-.sow{
-    width: 100%;
-    height: 2300px;
-}
+
 .class3{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     justify-content: center;
@@ -92,7 +97,7 @@
     left: 41%;
 }
 .box{
-    height: 400px;
+    height: 433px;
     border:2px solid #552619;
     border-radius: 20px;
     width: 23%;
@@ -106,6 +111,7 @@
 }
 .boxsection{
     width: 100%;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -114,7 +120,7 @@
     
 }
 .boximg{
-    height: 330px;
+    height: 320px;
     background-size: cover;
     margin-top: -21px;
     margin-bottom: 1rem;

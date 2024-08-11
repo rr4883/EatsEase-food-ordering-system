@@ -26,7 +26,7 @@ body {
     margin-top: -48px;
 }
 .logo{
-    background-image: url("cuco.png");
+    background-image: url("assets/cuco.png");
     height:130px;
     width: 110%;
     background-size: cover;
@@ -136,7 +136,7 @@ footer {
     text-align: center;
     padding: 1em;
     position: absolute;
-    top: 120%;
+    top: 100%;
     left: 0%;
     width: 100%;
 }
